@@ -27,21 +27,13 @@ enum States{
 
 class IHaveStates{
     States state;
-    String thisString;
     
     public States getState() {
         return state;
-    }
-    
-
-    public String getThisString() {
-        return thisString;
-    }
-
+    }  
 
     public IHaveStates() {
         state = States.values()[ThreadLocalRandom.current().nextInt(3)];
-        thisString = "default";
     }
 }
 @CrossOrigin
