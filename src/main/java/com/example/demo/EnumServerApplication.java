@@ -19,10 +19,10 @@ public class EnumServerApplication {
 }
 enum States{
     STATE_ONE,STATE_TWO,STATE_THREE; 
-    @JsonValue
-    public int toValue() {
-        return ordinal();
-    }
+//    @JsonValue
+//    public int toValue() {
+//        return ordinal();
+//    }
 }
 
 class IHaveStates{
